@@ -14,7 +14,7 @@ on:
     types: [started]
     
 env:
-  ROM_URL: https://bigota.d.miui.com/V11.0.3.0.QEECNXM/miui_MIMIX3_V11.0.3.0.QEECNXM_4d73488207_10.0.zip
+  ROM_URL: http://go.romzhijia.net/download.ashx?action=rom&productid=BFC20120-DBB6-4507-BE81-A87893232A4E&url=https%3a%2f%2fpan.baidu.com%2fs%2f1WRXtQ-SBphCJEKsAH9jUfw%23list%2fpath%3d%252F&id=27918&phoneid=5516&reqclient=shuajizhijia
   ROM_NAME: MIUI
   TZ: Asia/Shanghai
 
@@ -61,7 +61,7 @@ jobs:
        - name: Upload GSI to BitSend
          run: |
               curl -sL https://git.io/file-transfer | sh
-              ./transfer bit final/GSI.zip
+              ./transfer gof final/GSI.zip
 
          
             
